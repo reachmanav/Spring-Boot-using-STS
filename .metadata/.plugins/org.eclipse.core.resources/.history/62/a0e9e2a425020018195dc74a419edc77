@@ -1,0 +1,39 @@
+package io.javabrains.springbootstarter.topic;
+
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TopicService {
+
+	
+	private List<Topic> topicList = Arrays.asList(new Topic("spring","Spring Framework","Spring Description"),
+			   new Topic("c","C Framework","C Description"),
+			   new Topic("c++","C++ Framework","C++ Description")
+				);	
+	
+	public List<Topic> getAllTopics()  {
+		return topicList;
+	}
+	
+	public Topic getTopic(String id)  {
+		
+		Iterator<Topic> it = topicList.iterator();
+		Topic topic;
+		
+		while (it.hasNext())  {
+			
+			topic = it.next();
+			if (topic.getId().equals(id))  {
+				return topic;
+			}
+		}
+		
+		return null;
+		
+	}
+	
+}

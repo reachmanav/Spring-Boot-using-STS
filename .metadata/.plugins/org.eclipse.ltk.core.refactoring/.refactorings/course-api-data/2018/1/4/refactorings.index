@@ -1,0 +1,13 @@
+1516990533894	Delete element
+1516994900371	Copy package
+1516994974683	Rename type 'Topic'
+1516994991284	Rename type 'TopicController'
+1516995006818	Rename type 'TopicRepository'
+1516995020391	Rename type 'TopicService'
+1516995054765	Encapsulate field 'topic'
+1516995109809	Rename method 'getAllTopics'
+1516995126624	Rename method 'getTopic'
+1516995168145	Rename method 'addTopic'
+1516997135053	Encapsulate field 'topic'
+1517009734459	Delete element
+1517011866108	Encapsulate field 'topic'
